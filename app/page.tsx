@@ -1,47 +1,83 @@
-export default function Home() {
+import Link from "next/link";
+
+export default function About() {
+  const interests = [
+    "Computational Text Analysis",
+    "Legislative Politics",
+    "Natural Language Processing",
+    "Comparative Politics",
+  ];
+
+  const links = [
+    { label: "Email", href: "mailto:your@email.edu", external: true },
+    { label: "CV", href: "/cv", external: false },
+    { label: "Google Scholar", href: "#", external: true },
+    { label: "GitHub", href: "#", external: true },
+  ];
+
   return (
-    <div className="max-w-3xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       {/* Hero */}
-      <section className="mb-20">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
-          Your Name
-        </h1>
-        <p className="text-lg text-gray-500 mb-6 leading-relaxed">
-          PhD Candidate in Management · [Your University]
-        </p>
-        <p className="text-gray-600 leading-relaxed max-w-2xl">
-          I study [your research area]. My work examines [brief description of
-          research interests]. I am on the job market for academic positions in
-          [year].
-        </p>
-        <div className="flex gap-4 mt-8">
-          <a
-            href="/cv.pdf"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-700 transition-colors"
-          >
-            Curriculum Vitae
-          </a>
-          <a
-            href="mailto:you@university.edu"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-md hover:border-gray-500 transition-colors"
-          >
-            Contact
-          </a>
+      <section className="mb-16 flex flex-col-reverse md:flex-row md:items-start md:gap-12">
+        <div className="flex-1 mt-8 md:mt-0">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-2">
+            Your Full Name
+          </h1>
+          <p className="text-base text-gray-500 mb-4">
+            PhD Candidate · Department of X, University of Y
+          </p>
+          <p className="text-gray-700 leading-relaxed italic mb-6">
+            I study how language shapes political behaviour using computational
+            text analysis.
+          </p>
+
+          {/* Short Bio */}
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm mb-8">
+            <p>
+              Jane Smith is a PhD candidate in Political Science at the
+              University of Y, where she studies the computational analysis of
+              legislative discourse.
+            </p>
+            <p>
+              Her work draws on large-scale text corpora and applies natural
+              language processing to questions of political representation and
+              agenda-setting.
+            </p>
+            <p>
+              Her research has been published in / supported by [journals /
+              grants / awards].
+            </p>
+          </div>
+
+          {/* Contact links */}
+          <div className="flex flex-wrap gap-3">
+            {links.map(({ label, href, external }) => (
+              <a
+                key={label}
+                href={href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+                className="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 text-gray-700 rounded-md hover:border-gray-500 transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Photo placeholder */}
+        <div className="shrink-0 w-40 h-40 md:w-48 md:h-48 rounded-lg bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
+          Photo
         </div>
       </section>
 
       {/* Research Interests */}
-      <section className="mb-20">
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">
+      <section className="mb-16">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">
           Research Interests
         </h2>
         <div className="flex flex-wrap gap-2">
-          {[
-            "Topic One",
-            "Topic Two",
-            "Topic Three",
-            "Topic Four",
-          ].map((interest) => (
+          {interests.map((interest) => (
             <span
               key={interest}
               className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full"
@@ -52,35 +88,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Work */}
-      <section>
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">
-          Recent Work
-        </h2>
-        <div className="space-y-6">
-          <div className="group">
-            <h3 className="font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
-              Paper Title One
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              <em>Journal / Working Paper</em> · 2024
-            </p>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-              Brief abstract or one-sentence description of the paper.
-            </p>
-          </div>
-          <div className="group">
-            <h3 className="font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
-              Paper Title Two
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              <em>Journal / Working Paper</em> · 2023
-            </p>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-              Brief abstract or one-sentence description of the paper.
-            </p>
-          </div>
-        </div>
+      {/* Office / Contact */}
+      <section className="mb-16 text-sm text-gray-500 space-y-1">
+        <p>
+          <span className="font-medium text-gray-700">Office:</span> Room X,
+          Building Y, University Z
+        </p>
+        <p>
+          <span className="font-medium text-gray-700">Email:</span>{" "}
+          <a
+            href="mailto:your@email.edu"
+            className="hover:text-gray-900 transition-colors"
+          >
+            your@email.edu
+          </a>
+        </p>
+      </section>
+
+      {/* Soft link to Research Philosophy */}
+      <section className="border-t border-gray-100 pt-8">
+        <p className="text-sm text-gray-500">
+          Curious about the thinking behind my research agenda?{" "}
+          <Link
+            href="/research-philosophy"
+            className="text-gray-700 underline underline-offset-2 hover:text-gray-900 transition-colors"
+          >
+            Read my Research Philosophy →
+          </Link>
+        </p>
       </section>
     </div>
   );

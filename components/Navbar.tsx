@@ -4,8 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
+  { href: "/", label: "About" },
+  { href: "/research", label: "Research" },
+  { href: "/publications", label: "Publications" },
+  { href: "/past-projects", label: "Past Projects" },
+  { href: "/cv", label: "CV" },
 ];
 
 export default function Navbar() {
@@ -13,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm border-b border-gray-100">
-      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-semibold text-gray-900 tracking-tight">
           Your Name
         </Link>
