@@ -9,8 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name",
-  description: "Personal website of Your Name, researcher in management.",
+  title: "Alex Tyulyupo",
+  description:
+    "Personal website of Alex Tyulyupo, researcher in organizational behavior, categories, and entrepreneurship.",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="border-t border-gray-100 py-8 mt-24">
           <div className="max-w-3xl mx-auto px-6 text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} Your Name
+            © {new Date().getFullYear()} Alex Tyulyupo
           </div>
         </footer>
       </body>

@@ -6,8 +6,9 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "About" },
   { href: "/research", label: "Research" },
-  { href: "/publications", label: "Publications" },
-  { href: "/past-projects", label: "Past Projects" },
+  { href: "/tools", label: "Tools" },
+  { href: "/teaching", label: "Teaching" },
+  { href: "/presentations", label: "Presentations" },
   { href: "/cv", label: "CV" },
 ];
 
@@ -16,11 +17,11 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm border-b border-gray-100">
-      <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-6 py-3 sm:h-14 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
         <Link href="/" className="font-semibold text-gray-900 tracking-tight">
-          Your Name
+          Alex Tyulyupo
         </Link>
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-end">
           {links.map(({ href, label }) => (
             <Link
               key={href}

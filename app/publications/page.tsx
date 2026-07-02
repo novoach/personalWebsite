@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Publications | Your Name",
-  description: "Peer-reviewed articles, working papers, and other writing.",
+  title: "Publications | Alex Tyulyupo",
+  description:
+    "Peer-reviewed articles, book chapters, working papers, and projects by Alex Tyulyupo.",
 };
 
 type PubLink = { label: string; href: string };
@@ -8,78 +9,65 @@ type PubLink = { label: string; href: string };
 type Publication = {
   citation: string;
   note?: string;
-  links: PubLink[];
+  links?: PubLink[];
 };
 
-const peerReviewed: { published: Publication[]; forthcoming: Publication[] } = {
-  published: [
-    {
-      citation:
-        "Smith, J. (2024). Title of paper. Journal Name, 12(3), 45–67.",
-      links: [
-        { label: "PDF", href: "#" },
-        { label: "Journal page", href: "#" },
-        { label: "Replication data", href: "#" },
-      ],
-    },
-    {
-      citation:
-        "Smith, J., & Jones, A. (2023). Another paper. Another Journal, 8(1), 1–22.",
-      links: [
-        { label: "PDF", href: "#" },
-        { label: "DOI", href: "#" },
-      ],
-    },
-  ],
-  forthcoming: [
-    {
-      citation: "Smith, J. (forthcoming). Title. Journal Name. Accepted Month 2024.",
-      links: [{ label: "PDF", href: "#" }],
-    },
-  ],
-};
-
-const bookChapters: Publication[] = [
+const peerReviewed: Publication[] = [
   {
     citation:
-      "Smith, J. (2023). Chapter title. In A. Editor (Ed.), Book Title (pp. 10–30). Publisher.",
-    links: [
-      { label: "PDF", href: "#" },
-      { label: "Publisher page", href: "#" },
-    ],
+      "Tyulyupo, A., & Kovács, B. Categorical Engagement in Strategic Search: When and Why Typicality Shapes Competitor Identification. Sociological Science.",
+    note: "Forthcoming",
+  },
+  {
+    citation:
+      "Kovács, B., & Tyulyupo, A. (2026). Cognitive Cartography: How Geographic Categories and Firm Location-Typicality Shape Competitor Identification. Industrial and Corporate Change, dtag031.",
+    links: [{ label: "DOI", href: "https://doi.org/10.1093/icc/dtag031" }],
   },
 ];
 
-const workingPapers: Publication[] = [
+const underReview: Publication[] = [
   {
-    citation: "Smith, J. (2024). Title of working paper.",
-    note: "Under review at Journal X",
-    links: [
-      { label: "PDF", href: "#" },
-      { label: "SSRN", href: "#" },
-    ],
+    citation:
+      "Tyulyupo, A., & Kovács, B. Competing Against Whom? Competitor Identification and Opportunity Belief Revision.",
+    note: "Third round, Journal of Business Venturing",
   },
   {
-    citation: "Smith, J. (2024). Another working paper.",
-    note: "Manuscript available on request",
-    links: [],
+    citation:
+      "Tyulyupo, A., & Kovács, B. Organizational Reconnaissance: Opening the Black Box of Search with Behavioral Simulation.",
+    note: "Reject and resubmit, Strategic Management Journal",
   },
 ];
 
-const workInProgress: { title: string; coauthor?: string }[] = [
-  { title: "Title of project in early stage", coauthor: "with Co-Author Name" },
-  { title: "Title of project — data collection phase" },
-  { title: "Title of dissertation chapter in drafting" },
-];
-
-const otherWriting: Publication[] = [
+const workInProgress: Publication[] = [
   {
-    citation: "Smith, J. (2023). 'Op-ed title.' Publication Name.",
-    links: [{ label: "Link", href: "#" }],
+    citation:
+      "Gouvard, P., Kovács, B., & Tyulyupo, A. Invited chapter for Research in the Sociology of Organizations (special issue on categories in the digital age).",
+    note: "In development",
   },
   {
-    citation: "Smith, J. (2022). 'Policy brief title.' Institution / Think Tank.",
-    links: [{ label: "PDF", href: "#" }],
+    citation: "Collective Learning and Category Spanning.",
+    note: "In development",
+  },
+];
+
+const preDoctoral: Publication[] = [
+  {
+    citation:
+      "Shevchuk, A., Strebkov, D., & Tyulyupo, A. (2021). Always on across Time Zones: Invisible Schedules in the Online Gig Economy. New Technology, Work and Employment, 36(1), 94-113.",
+  },
+  {
+    citation:
+      "Shevchuk, A., Strebkov, D., & Tyulyupo, A. (2021). The Geography of the Digital Freelance Economy in Russia and Beyond. In Topologies of Digital Work (Chapter 2, pp. 19-50). Palgrave Macmillan.",
+  },
+  {
+    citation:
+      "Tyulyupo, A. (2021). Factors of (Dis)Trust Towards Clients on the Online Labor Platforms. Monitoring of Public Opinion: Economic and Social Changes, 3.",
+    note: "In Russian",
+  },
+  {
+    citation:
+      "Strebkov, D., Shevchuk, A., Lukina, A., Melianova, E., & Tyulyupo, A. (2019). Social Factors of Contractor Selection on Freelance Online Marketplace: A Study of Contests Using Big Data. Journal of Economic Sociology, 20(3).",
+    note: "In Russian",
   },
 ];
 
@@ -94,15 +82,17 @@ function PubEntry({ pub }: { pub: Publication }) {
           </span>
         )}
       </p>
-      {pub.links.length > 0 && (
+      {pub.links && pub.links.length > 0 && (
         <div className="flex gap-4 mt-2">
           {pub.links.map((link) => (
             <a
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs font-medium text-blue-600 hover:text-blue-800 transition-colors"
             >
-              {link.label} →
+              {link.label} <span aria-hidden="true">-&gt;</span>
             </a>
           ))}
         </div>
@@ -119,14 +109,6 @@ function SectionHeader({ title }: { title: string }) {
   );
 }
 
-function SubHeader({ title }: { title: string }) {
-  return (
-    <h3 className="text-xs font-medium uppercase tracking-widest text-gray-300 mb-3 mt-6">
-      {title}
-    </h3>
-  );
-}
-
 export default function Publications() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
@@ -134,57 +116,30 @@ export default function Publications() {
         Publications &amp; Writing
       </h1>
 
-      {/* Peer-Reviewed */}
       <section>
         <SectionHeader title="Peer-Reviewed Articles" />
-        <SubHeader title="Published" />
-        {peerReviewed.published.map((pub) => (
-          <PubEntry key={pub.citation} pub={pub} />
-        ))}
-        <SubHeader title="Forthcoming / Accepted" />
-        {peerReviewed.forthcoming.map((pub) => (
+        {peerReviewed.map((pub) => (
           <PubEntry key={pub.citation} pub={pub} />
         ))}
       </section>
 
-      {/* Book Chapters */}
       <section>
-        <SectionHeader title="Book Chapters" />
-        {bookChapters.map((pub) => (
+        <SectionHeader title="Under Review" />
+        {underReview.map((pub) => (
           <PubEntry key={pub.citation} pub={pub} />
         ))}
       </section>
 
-      {/* Working Papers */}
-      <section>
-        <SectionHeader title="Working Papers" />
-        {workingPapers.map((pub) => (
-          <PubEntry key={pub.citation} pub={pub} />
-        ))}
-      </section>
-
-      {/* Work in Progress */}
       <section>
         <SectionHeader title="Work in Progress" />
-        <ul className="space-y-2">
-          {workInProgress.map((item) => (
-            <li key={item.title} className="text-sm text-gray-600 flex gap-2">
-              <span className="text-gray-300 mt-0.5">•</span>
-              <span>
-                {item.title}
-                {item.coauthor && (
-                  <span className="text-gray-400"> {item.coauthor}</span>
-                )}
-              </span>
-            </li>
-          ))}
-        </ul>
+        {workInProgress.map((pub) => (
+          <PubEntry key={pub.citation} pub={pub} />
+        ))}
       </section>
 
-      {/* Other Writing */}
       <section>
-        <SectionHeader title="Other Writing" />
-        {otherWriting.map((pub) => (
+        <SectionHeader title="Pre-Doctoral Publications" />
+        {preDoctoral.map((pub) => (
           <PubEntry key={pub.citation} pub={pub} />
         ))}
       </section>
