@@ -82,11 +82,11 @@ export default function About() {
           <Image
             src="/alex-tyulyupo.jpg"
             alt="Alex Tyulyupo"
-            width={1090}
-            height={1090}
+            width={656}
+            height={904}
             priority
             sizes="(min-width: 768px) 260px, 70vw"
-            className="aspect-square w-full max-w-[260px] mx-auto rounded-lg object-cover"
+            className="h-auto w-full max-w-[260px] mx-auto rounded-lg object-cover"
           />
         </div>
       </section>
