@@ -12,7 +12,7 @@ type Course = {
 const instructorCourses: Course[] = [
   {
     title: "Strategy and Management",
-    context: "MBA, ESSEC Business School",
+    context: "Master's-level core course, Grande École, ESSEC Business School",
     year: "2024",
   },
   {
