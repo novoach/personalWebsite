@@ -1,4 +1,35 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
+const profileJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  url: "https://alextyulyupo.com",
+  mainEntity: {
+    "@type": "Person",
+    "@id": "https://alextyulyupo.com/#alex-tyulyupo",
+    name: "Alex Tyulyupo",
+    url: "https://alextyulyupo.com",
+    image: "https://alextyulyupo.com/alex-tyulyupo.jpg",
+    jobTitle: "Postdoctoral Associate",
+    affiliation: {
+      "@type": "Organization",
+      name: "Yale School of Management",
+    },
+    sameAs: [
+      "https://scholar.google.com/citations?user=D-oEFq0AAAAJ&view_op=list_works&sortby=pubdate",
+    ],
+    knowsAbout: [
+      "Categorization",
+      "Organizational learning",
+      "Entrepreneurial opportunities",
+    ],
+  },
+};
 
 const interests = [
   "Categorization",
@@ -23,6 +54,12 @@ const links = [
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(profileJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <section className="mb-16 grid gap-10 md:grid-cols-[1fr_260px] md:items-start">
         <div>
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">

@@ -4,6 +4,7 @@ export const metadata = {
   title: "Research | Alex Tyulyupo",
   description:
     "Research by Alex Tyulyupo on organizational reconnaissance, categories, search, and entrepreneurship.",
+  alternates: { canonical: "/research" },
 };
 
 type ResearchLink = {

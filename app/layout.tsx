@@ -9,9 +9,36 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alextyulyupo.com"),
   title: "Alex Tyulyupo",
   description:
     "Personal website of Alex Tyulyupo, researcher in organizational behavior, categories, and entrepreneurship.",
+  authors: [{ name: "Alex Tyulyupo", url: "https://alextyulyupo.com" }],
+  creator: "Alex Tyulyupo",
+  publisher: "Alex Tyulyupo",
+  openGraph: {
+    title: "Alex Tyulyupo",
+    description:
+      "Research on organizational reconnaissance, categories, search, and entrepreneurship.",
+    siteName: "Alex Tyulyupo",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/alex-tyulyupo.jpg",
+        width: 656,
+        height: 904,
+        alt: "Alex Tyulyupo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Alex Tyulyupo",
+    description:
+      "Research on organizational reconnaissance, categories, search, and entrepreneurship.",
+    images: ["/alex-tyulyupo.jpg"],
+  },
 };
 
 export default function RootLayout({

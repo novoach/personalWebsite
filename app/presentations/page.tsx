@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Presentations | Alex Tyulyupo",
   description: "Conference presentations by Alex Tyulyupo.",
+  alternates: { canonical: "/presentations" },
 };
 
 const presentations = [

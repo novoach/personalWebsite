@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Teaching | Alex Tyulyupo",
   description: "Teaching experience and interests of Alex Tyulyupo.",
+  alternates: { canonical: "/teaching" },
 };
 
 type Course = {

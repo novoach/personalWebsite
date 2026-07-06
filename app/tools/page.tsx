@@ -2,6 +2,8 @@ export const metadata = {
   title: "Tools | Alex Tyulyupo",
   description:
     "Behavioral search simulation platform designed by Alex Tyulyupo.",
+  alternates: { canonical: "/tools" },
+  robots: { index: false, follow: false },
 };
 
 const capabilities = [

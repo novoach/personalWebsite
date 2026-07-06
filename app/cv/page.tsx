@@ -1,6 +1,7 @@
 export const metadata = {
   title: "CV | Alex Tyulyupo",
   description: "Curriculum vitae of Alex Tyulyupo.",
+  alternates: { canonical: "/cv" },
 };
 
 function Section({
