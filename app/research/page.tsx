@@ -56,7 +56,7 @@ const projectGroups: { title: string; projects: Project[] }[] = [
         title: "Competing Against Whom?",
         authors: "Alex Tyulyupo and Balázs Kovács",
         venue: "Journal of Business Venturing",
-        status: "Third-round revisions",
+        status: "Third round",
         abstract:
           "Competition is implicit in many foundational and modern theories of entrepreneurship, yet little is known about how perceptions of competition form and shape venture development. This paper argues that competition is a uniquely uncertain ingredient in the formation of opportunity beliefs. Encountering a competitor triggers a threat assessment, updates broader perceptions of competitive pressure, and can prompt revision of the venture concept. A revised venture may face a different competitive landscape, at which point identification begins again.",
         keywords: ["Entrepreneurship", "Competition", "Opportunity beliefs"],

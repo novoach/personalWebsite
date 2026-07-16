@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/alex-tyulyupo.jpg",
-        width: 656,
-        height: 904,
+        width: 1122,
+        height: 1402,
         alt: "Alex Tyulyupo",
       },
     ],

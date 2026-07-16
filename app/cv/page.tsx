@@ -68,7 +68,7 @@ export default function CV() {
               Google Scholar
             </a>
           </p>
-          <p className="text-xs text-gray-400 mt-1">Updated June 2026</p>
+          <p className="text-xs text-gray-400 mt-1">Updated July 2026</p>
         </div>
         <div className="flex shrink-0 flex-wrap gap-2">
           <a
@@ -137,7 +137,7 @@ export default function CV() {
             Tyulyupo, A., &amp; Kovács, B. Competing Against Whom? Competitor
             Identification and Opportunity Belief Revision.{" "}
             <span className="text-blue-600 text-xs font-medium">
-              Third-round revisions, Journal of Business Venturing
+              Third round, Journal of Business Venturing
             </span>
           </p>
           <p>

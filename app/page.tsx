@@ -119,8 +119,8 @@ export default function About() {
           <Image
             src="/alex-tyulyupo.jpg"
             alt="Alex Tyulyupo"
-            width={656}
-            height={904}
+            width={1122}
+            height={1402}
             priority
             sizes="(min-width: 768px) 260px, 70vw"
             className="h-auto w-full max-w-[260px] mx-auto rounded-lg object-cover"
