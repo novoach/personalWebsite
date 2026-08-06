@@ -28,13 +28,14 @@ const projectGroups: { title: string; projects: Project[] }[] = [
     projects: [
       {
         title:
-          "Categorical Engagement in Strategic Search: When and Why Typicality Shapes Competitor Identification",
+          "Categorical Engagement and the Contingent Nature of Typicality Effects",
         authors: "Alex Tyulyupo and Balázs Kovács",
         venue: "Sociological Science",
-        status: "Forthcoming",
+        status: "Published",
         abstract:
           "The typicality premium, the tendency of audiences to favor prototypical category members, can weaken or reverse across contexts. I show that this variation originates in the search process itself. The premium emerges only when searchers invoke industry categories and disappears under keyword search. Among category-based searches, it depends on the fit between the searcher's goal and the invoked category. Typicality effects are a contingent product of how searchers use categories, not a structural property of categories themselves.",
         keywords: ["Categories", "Typicality", "Search"],
+        links: [{ label: "DOI", href: "https://doi.org/10.15195/v13.a34" }],
       },
       {
         title:
@@ -100,7 +101,7 @@ const projectGroups: { title: string; projects: Project[] }[] = [
 const statusColors: Record<string, string> = {
   Forthcoming: "bg-green-50 text-green-700 border border-green-200",
   Published: "bg-blue-50 text-blue-700 border border-blue-200",
-  "Third-round": "bg-purple-50 text-purple-700 border border-purple-200",
+  "Third round": "bg-purple-50 text-purple-700 border border-purple-200",
   Reject: "bg-yellow-50 text-yellow-800 border border-yellow-200",
   "In development": "bg-gray-100 text-gray-600 border border-gray-200",
   default: "bg-gray-100 text-gray-600 border border-gray-200",
@@ -203,14 +204,14 @@ export default function Research() {
             href="/tools"
             className="inline-flex items-center px-3 py-1.5 text-sm border border-gray-200 text-gray-600 rounded-md hover:border-gray-400 hover:text-gray-900 transition-colors"
           >
-            View simulation platform
+            View research instruments
           </Link>
         </div>
       </section>
 
       {projectGroups.map((group) => (
         <section key={group.title} className="mb-16 last:mb-0">
-          <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-8">
+          <h2 className="text-base font-semibold tracking-tight text-gray-900 mb-8">
             {group.title}
           </h2>
           <div className="space-y-12">

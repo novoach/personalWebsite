@@ -121,12 +121,9 @@ export default function CV() {
       <Section title="Selected Publications and Working Projects">
         <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
           <p>
-            Tyulyupo, A., &amp; Kovács, B. Categorical Engagement in Strategic
-            Search: When and Why Typicality Shapes Competitor Identification.{" "}
-            <em>Sociological Science</em>.{" "}
-            <span className="text-blue-600 text-xs font-medium">
-              Forthcoming
-            </span>
+            Tyulyupo, A., &amp; Kovács, B. (2026). Categorical Engagement and
+            the Contingent Nature of Typicality Effects.{" "}
+            <em>Sociological Science</em>, 13, 884-914.
           </p>
           <p>
             Kovács, B., &amp; Tyulyupo, A. (2026). Cognitive Cartography: How
@@ -148,6 +145,14 @@ export default function CV() {
             </span>
           </p>
         </div>
+      </Section>
+
+      <Section title="Grants and Awards">
+        <Row
+          left="Inaugural cohort, OpenAI Economic Research Exchange"
+          right="2026"
+          sub="Project with Balázs Kovács and Iris Wang, with a residency at OpenAI as the in-house researcher."
+        />
       </Section>
 
       <Section title="Research and Professional Experience">

@@ -15,8 +15,8 @@ type Publication = {
 const peerReviewed: Publication[] = [
   {
     citation:
-      "Tyulyupo, A., & Kovács, B. Categorical Engagement in Strategic Search: When and Why Typicality Shapes Competitor Identification. Sociological Science.",
-    note: "Forthcoming",
+      "Tyulyupo, A., & Kovács, B. (2026). Categorical Engagement and the Contingent Nature of Typicality Effects. Sociological Science, 13, 884-914.",
+    links: [{ label: "DOI", href: "https://doi.org/10.15195/v13.a34" }],
   },
   {
     citation:
@@ -103,7 +103,7 @@ function PubEntry({ pub }: { pub: Publication }) {
 
 function SectionHeader({ title }: { title: string }) {
   return (
-    <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 mt-12 first:mt-0">
+    <h2 className="text-base font-semibold tracking-tight text-gray-900 mb-4 mt-12 first:mt-0">
       {title}
     </h2>
   );

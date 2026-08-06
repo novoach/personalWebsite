@@ -1,7 +1,14 @@
 import type { MetadataRoute } from "next";
 
 const siteUrl = "https://alextyulyupo.com";
-const publicRoutes = ["", "/research", "/teaching", "/presentations", "/cv"];
+const publicRoutes = [
+  "",
+  "/research",
+  "/tools",
+  "/teaching",
+  "/presentations",
+  "/cv",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return publicRoutes.map((route) => ({
