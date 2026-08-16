@@ -134,7 +134,7 @@ export default function CV() {
             Tyulyupo, A., &amp; Kovács, B. Competing Against Whom? Competitor
             Identification and Opportunity Belief Revision.{" "}
             <span className="text-blue-600 text-xs font-medium">
-              Third round, Journal of Business Venturing
+              Conditionally accepted, Journal of Business Venturing
             </span>
           </p>
           <p>
@@ -151,7 +151,7 @@ export default function CV() {
         <Row
           left="Inaugural cohort, OpenAI Economic Research Exchange"
           right="2026"
-          sub="Project with Balázs Kovács and Iris Wang, with a residency at OpenAI as the in-house researcher."
+          sub="Project with Balázs Kovács and Iris Wang."
         />
       </Section>
 

@@ -3,6 +3,7 @@ export const metadata = {
   description:
     "Behavioral search simulation platform used by Alex Tyulyupo to study competitor identification.",
   alternates: { canonical: "/tools" },
+  robots: { index: false, follow: false },
 };
 
 const sessionNotes = [

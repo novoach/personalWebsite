@@ -29,7 +29,7 @@ const underReview: Publication[] = [
   {
     citation:
       "Tyulyupo, A., & Kovács, B. Competing Against Whom? Competitor Identification and Opportunity Belief Revision.",
-    note: "Third round, Journal of Business Venturing",
+    note: "Conditionally accepted, Journal of Business Venturing",
   },
   {
     citation:

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export const metadata = {
   title: "Research | Alex Tyulyupo",
   description:
@@ -57,7 +55,7 @@ const projectGroups: { title: string; projects: Project[] }[] = [
         title: "Competing Against Whom?",
         authors: "Alex Tyulyupo and Balázs Kovács",
         venue: "Journal of Business Venturing",
-        status: "Third round",
+        status: "Conditionally accepted",
         abstract:
           "Competition is implicit in many foundational and modern theories of entrepreneurship, yet little is known about how perceptions of competition form and shape venture development. This paper argues that competition is a uniquely uncertain ingredient in the formation of opportunity beliefs. Encountering a competitor triggers a threat assessment, updates broader perceptions of competitive pressure, and can prompt revision of the venture concept. A revised venture may face a different competitive landscape, at which point identification begins again.",
         keywords: ["Entrepreneurship", "Competition", "Opportunity beliefs"],
@@ -101,7 +99,8 @@ const projectGroups: { title: string; projects: Project[] }[] = [
 const statusColors: Record<string, string> = {
   Forthcoming: "bg-green-50 text-green-700 border border-green-200",
   Published: "bg-blue-50 text-blue-700 border border-blue-200",
-  "Third round": "bg-purple-50 text-purple-700 border border-purple-200",
+  "Conditionally accepted":
+    "bg-green-50 text-green-700 border border-green-200",
   Reject: "bg-yellow-50 text-yellow-800 border border-yellow-200",
   "In development": "bg-gray-100 text-gray-600 border border-gray-200",
   default: "bg-gray-100 text-gray-600 border border-gray-200",
@@ -192,20 +191,6 @@ export default function Research() {
             the complete search trajectory as participants browse categories,
             enter keywords, and identify competitors.
           </p>
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="/docs/research-statement.docx"
-            className="inline-flex items-center px-3 py-1.5 text-sm border border-gray-300 text-gray-700 rounded-md hover:border-gray-500 transition-colors"
-          >
-            Download full research statement
-          </a>
-          <Link
-            href="/tools"
-            className="inline-flex items-center px-3 py-1.5 text-sm border border-gray-200 text-gray-600 rounded-md hover:border-gray-400 hover:text-gray-900 transition-colors"
-          >
-            View research instruments
-          </Link>
         </div>
       </section>
 
