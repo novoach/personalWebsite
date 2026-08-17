@@ -145,7 +145,7 @@ export default function CV() {
             </span>
           </p>
           <p>
-            Kashevnik, A., &amp; Tyulyupo, A.{" "}
+            Kashevnik, A., &amp; Tyulyupo, A. Sauk Dzhaylyau Central.{" "}
             <a
               href="https://publications.americanalpineclub.org/articles/13201215434"
               target="_blank"
@@ -157,7 +157,8 @@ export default function CV() {
             .
           </p>
           <p>
-            Belotserkovskiy, K., Temerev, I., &amp; Tyulyupo, A.{" "}
+            Belotserkovskiy, K., Temerev, I., &amp; Tyulyupo, A. Western
+            Kokshaal-too.{" "}
             <a
               href="https://publications.americanalpineclub.org/articles/13201216101"
               target="_blank"
