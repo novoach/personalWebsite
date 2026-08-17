@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -56,6 +57,7 @@ export default function RootLayout({
             © {new Date().getFullYear()} Alex Tyulyupo
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
