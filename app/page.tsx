@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -14,7 +13,6 @@ const profileJsonLd = {
     "@id": "https://alextyulyupo.com/#alex-tyulyupo",
     name: "Alex Tyulyupo",
     url: "https://alextyulyupo.com",
-    image: "https://alextyulyupo.com/alex-tyulyupo.jpg",
     jobTitle: "Postdoctoral Associate",
     affiliation: {
       "@type": "Organization",
@@ -54,7 +52,7 @@ export default function About() {
           __html: JSON.stringify(profileJsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <section className="mb-16 grid gap-10 md:grid-cols-[1fr_260px] md:items-start">
+      <section className="mb-16 grid gap-10 md:grid-cols-[1fr_240px] md:items-start">
         <div>
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
             Yale School of Management
@@ -62,10 +60,6 @@ export default function About() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-3">
             Alex Tyulyupo
           </h1>
-          <p className="text-base text-gray-500 mb-6">
-            Postdoctoral Associate studying organizational behavior, categories,
-            and entrepreneurship.
-          </p>
 
           <div className="space-y-5 text-gray-600 leading-relaxed mb-8">
             <p className="text-xl leading-relaxed text-gray-800">
@@ -133,16 +127,7 @@ export default function About() {
           </div>
         </div>
 
-        <aside className="order-first space-y-6 md:order-none">
-          <Image
-            src="/alex-tyulyupo.jpg"
-            alt="Alex Tyulyupo"
-            width={1122}
-            height={1402}
-            priority
-            sizes="(min-width: 768px) 260px, 70vw"
-            className="h-auto w-full max-w-[260px] mx-auto rounded-lg object-cover"
-          />
+        <aside className="space-y-6">
           <div className="rounded-lg border border-gray-200 p-4 text-sm leading-relaxed text-gray-600">
             <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
               Organizational Reconnaissance

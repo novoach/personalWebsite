@@ -24,21 +24,12 @@ export const metadata: Metadata = {
     siteName: "Alex Tyulyupo",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/alex-tyulyupo.jpg",
-        width: 1122,
-        height: 1402,
-        alt: "Alex Tyulyupo",
-      },
-    ],
   },
   twitter: {
     card: "summary",
     title: "Alex Tyulyupo",
     description:
       "Research on organizational reconnaissance, categories, search, and entrepreneurship.",
-    images: ["/alex-tyulyupo.jpg"],
   },
 };
 
