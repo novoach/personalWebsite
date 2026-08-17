@@ -144,6 +144,26 @@ export default function CV() {
               Reject and resubmit, Strategic Management Journal
             </span>
           </p>
+          <p>
+            <a
+              href="https://publications.americanalpineclub.org/articles/13201215434"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-900 transition-colors"
+            >
+              AAC (2019), coauthors.
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://publications.americanalpineclub.org/articles/13201216101"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-900 transition-colors"
+            >
+              AAC (2021), coauthors.
+            </a>
+          </p>
         </div>
       </Section>
 
