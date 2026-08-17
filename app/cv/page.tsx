@@ -133,36 +133,40 @@ export default function CV() {
           <p>
             Tyulyupo, A., &amp; Kovács, B. Competing Against Whom? Competitor
             Identification and Opportunity Belief Revision.{" "}
-            <span className="text-blue-600 text-xs font-medium">
+            <span className="text-gray-500 text-xs font-medium">
               Conditionally accepted, Journal of Business Venturing
             </span>
           </p>
           <p>
             Tyulyupo, A., &amp; Kovács, B. Organizational Reconnaissance:
             Opening the Black Box of Search with Behavioral Simulation.{" "}
-            <span className="text-blue-600 text-xs font-medium">
+            <span className="text-gray-500 text-xs font-medium">
               Reject and resubmit, Strategic Management Journal
             </span>
           </p>
           <p>
+            Kashevnik, A., &amp; Tyulyupo, A.{" "}
             <a
               href="https://publications.americanalpineclub.org/articles/13201215434"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-900 transition-colors"
+              className="text-blue-600 hover:text-blue-800 transition-colors"
             >
-              AAC (2019), coauthors.
+              AAC (2019)
             </a>
+            .
           </p>
           <p>
+            Belotserkovskiy, K., Temerev, I., &amp; Tyulyupo, A.{" "}
             <a
               href="https://publications.americanalpineclub.org/articles/13201216101"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-900 transition-colors"
+              className="text-blue-600 hover:text-blue-800 transition-colors"
             >
-              AAC (2021), coauthors.
+              AAC (2021)
             </a>
+            .
           </p>
         </div>
       </Section>
