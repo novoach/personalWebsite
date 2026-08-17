@@ -121,14 +121,31 @@ export default function CV() {
       <Section title="Selected Publications and Working Projects">
         <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
           <p>
-            Tyulyupo, A., &amp; Kovács, B. (2026). Categorical Engagement and
-            the Contingent Nature of Typicality Effects.{" "}
+            Tyulyupo, A., &amp; Kovács, B. (2026).{" "}
+            <a
+              href="https://doi.org/10.15195/v13.a34"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 transition-colors"
+            >
+              Categorical Engagement and the Contingent Nature of Typicality
+              Effects
+            </a>
+            .{" "}
             <em>Sociological Science</em>, 13, 884-914.
           </p>
           <p>
-            Kovács, B., &amp; Tyulyupo, A. (2026). Cognitive Cartography: How
-            Geographic Categories and Firm Location-Typicality Shape Competitor
-            Identification. <em>Industrial and Corporate Change</em>, dtag031.
+            Kovács, B., &amp; Tyulyupo, A. (2026).{" "}
+            <a
+              href="https://doi.org/10.1093/icc/dtag031"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 transition-colors"
+            >
+              Cognitive Cartography: How Geographic Categories and Firm
+              Location-Typicality Shape Competitor Identification
+            </a>
+            . <em>Industrial and Corporate Change</em>, dtag031.
           </p>
           <p>
             Tyulyupo, A., &amp; Kovács, B. Competing Against Whom? Competitor
