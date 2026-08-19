@@ -8,7 +8,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/portal-demo", "/portal/"],
+        disallow: [
+          "/portal-demo",
+          "/portal/",
+          "/recon-pictogram-mock.html",
+        ],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
