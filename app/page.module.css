@@ -1,0 +1,305 @@
+.page {
+  --ink: #171717;
+  --muted: #6c6862;
+  --definition: #f3eee5;
+  --rule: #e5e0d8;
+  color: var(--ink);
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.lead {
+  max-width: 840px;
+  margin: 48px auto 54px;
+  padding: 0 34px;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: #7b4d35;
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.lead h1 {
+  margin: 0 0 22px;
+  font: 500 54px/1.02 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.035em;
+}
+
+.lead p {
+  margin: 0;
+  font: 18px/1.66 Georgia, "Times New Roman", serif;
+}
+
+.contactLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+.contactLinks a {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+}
+
+.contactLinks a:hover {
+  border-color: #6b7280;
+  background: #fafafa;
+  color: #111827;
+}
+
+.desktopStage {
+  position: relative;
+  width: 1320px;
+  height: 1190px;
+  margin: 0 auto 52px;
+  overflow: hidden;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: #fff;
+}
+
+.headspace {
+  position: absolute;
+  z-index: 20;
+  top: 15px;
+  left: 105px;
+  width: 1015px;
+  height: auto;
+}
+
+.general {
+  position: absolute;
+  z-index: 22;
+  top: 355px;
+  left: 52px;
+  width: 245px;
+  height: auto;
+}
+
+.enemy {
+  position: absolute;
+  z-index: 6;
+  top: 447px;
+  left: 270px;
+  width: 1005px;
+  height: auto;
+}
+
+.cannon {
+  position: absolute;
+  z-index: 8;
+  top: 742px;
+  left: 850px;
+  width: 440px;
+  height: auto;
+}
+
+.copyTop {
+  position: absolute;
+  z-index: 12;
+  top: 312px;
+  left: 352px;
+  font: 15.8px/23.5px Georgia, "Times New Roman", serif;
+}
+
+.copyTop div {
+  height: 23.5px;
+  white-space: nowrap;
+}
+
+.copyWedge {
+  position: absolute;
+  z-index: 12;
+  top: 538px;
+  left: 352px;
+  font: 15.8px/28.5px Georgia, "Times New Roman", serif;
+}
+
+.copyWedge div {
+  height: 28.5px;
+  white-space: nowrap;
+}
+
+.copyLower {
+  position: absolute;
+  z-index: 12;
+  top: 848px;
+  left: 160px;
+  width: 660px;
+  font: 15.8px/1.62 Georgia, "Times New Roman", serif;
+}
+
+.copyLower p {
+  margin: 0 0 17px;
+}
+
+.definition {
+  position: absolute;
+  z-index: 24;
+  top: 300px;
+  left: 1018px;
+  width: 260px;
+  padding: 16px 17px 15px;
+  border-left: 3px solid #1e1e1e;
+  background: var(--definition);
+}
+
+.definitionLabel {
+  margin-bottom: 8px;
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.definition p {
+  margin: 0;
+  font: 15px/1.5 Georgia, "Times New Roman", serif;
+}
+
+.researchLink {
+  color: #7b4d35;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.researchLink:hover {
+  color: #4f2f20;
+}
+
+.compact {
+  display: none;
+}
+
+.gotHere {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 52px 34px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.gotHere h2 {
+  margin: 0 0 20px;
+  font: 500 38px/1.1 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.025em;
+}
+
+.gotHere p {
+  margin: 0 0 18px;
+  font: 18px/1.68 Georgia, "Times New Roman", serif;
+}
+
+@media (max-width: 1359px) {
+  .lead {
+    max-width: 760px;
+    margin: 38px auto 28px;
+    padding: 0 22px;
+  }
+
+  .lead h1 {
+    font-size: 42px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .compact {
+    display: block;
+  }
+
+  .compactText {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+
+  .compactText > p {
+    margin: 0 0 18px;
+    font: 17px/1.68 Georgia, "Times New Roman", serif;
+  }
+
+  .compactDefinition {
+    margin: 30px 0;
+    padding: 19px 20px 18px;
+    border-left: 3px solid #1e1e1e;
+    background: var(--definition);
+  }
+
+  .compactDefinition p {
+    margin: 0;
+    font: 16px/1.55 Georgia, "Times New Roman", serif;
+  }
+
+  .compactVisual {
+    max-width: 760px;
+    margin: 34px auto 56px;
+    padding: 0 16px;
+  }
+
+  .compactSummary {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .gotHere {
+    max-width: 760px;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 520px) {
+  .lead {
+    margin-top: 30px;
+  }
+
+  .lead h1 {
+    font-size: 37px;
+    line-height: 1.06;
+  }
+
+  .lead p,
+  .gotHere p {
+    font-size: 17px;
+  }
+
+  .contactLinks {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .contactLinks a {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .gotHere {
+    padding-top: 42px;
+  }
+
+  .gotHere h2 {
+    font-size: 34px;
+  }
+}
