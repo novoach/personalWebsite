@@ -101,6 +101,35 @@ export default function About() {
         </div>
       </section>
 
+      <figure className={styles.compactIllustration}>
+        <div
+          className={styles.compactScene}
+          role="img"
+          aria-label="An observer surveys a partially visible competitive field while considering whether to defend or attack"
+        >
+          <img
+            className={styles.compactCloud}
+            src="/illustrations/recon-cloud.svg"
+            alt=""
+          />
+          <img
+            className={styles.compactGeneral}
+            src="/illustrations/recon-general.svg"
+            alt=""
+          />
+          <img
+            className={styles.compactEnemy}
+            src="/illustrations/recon-enemy.svg"
+            alt=""
+          />
+          <img
+            className={styles.compactCannon}
+            src="/illustrations/recon-cannon.svg"
+            alt=""
+          />
+        </div>
+      </figure>
+
       <div className={styles.desktop}>
         <section className={styles.desktopStage}>
           <img
@@ -208,14 +237,6 @@ export default function About() {
             reconnaissance. <ResearchLink />
           </p>
           <Definition compact />
-        </section>
-
-        <section className={styles.compactVisual}>
-          <img
-            className={styles.compactSummary}
-            src="/illustrations/recon-summary.svg"
-            alt="The actor surveys a partially observable environment while considering whether to defend or attack"
-          />
         </section>
       </div>
 
