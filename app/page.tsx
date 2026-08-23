@@ -38,11 +38,6 @@ const links = [
     external: false,
   },
   {
-    label: "alextyulyupo.com",
-    href: "https://alextyulyupo.com/",
-    external: false,
-  },
-  {
     label: "Google Scholar",
     href: "https://scholar.google.com/citations?sortby=pubdate&user=D-oEFq0AAAAJ&view_op=list_works",
     external: true,
