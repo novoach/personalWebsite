@@ -119,7 +119,7 @@ export default function About() {
           />
           <img
             className={styles.compactEnemy}
-            src="/illustrations/recon-enemy.svg"
+            src="/illustrations/recon-enemy-compact.svg"
             alt=""
           />
           <img
