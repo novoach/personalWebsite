@@ -108,9 +108,10 @@ export default function About() {
           aria-label="An observer surveys a partially visible competitive field while considering whether to defend or attack"
         >
           <img
-            
+            className={styles.compactCloud}
             src="/illustrations/recon-cloud.svg"
             alt=""
+            data-nav-obscurer
           />
           <img
             className={styles.compactGeneral}
@@ -133,9 +134,10 @@ export default function About() {
       <div className={styles.desktop}>
         <section className={styles.desktopStage}>
           <img
-            className={styles.compactCloud} data-nav-obscurer
+            className={styles.headspace}
             src="/illustrations/recon-cloud.svg"
             alt="The actor considers defending or attacking"
+            data-nav-obscurer
           />
           <img
             className={styles.general}
@@ -171,7 +173,6 @@ export default function About() {
             <div>the same conference, and workers are more likely to apply to a company where</div>
             <div>a friend works. But again, this is an overly static picture. Does no one ever browse</div>
             <div>job boards or Google Scholar? And if they do, how do they do it?</div>
-            
           </div>
 
           <Definition />
