@@ -165,14 +165,13 @@ export default function About() {
           <div className={styles.copyWedge}>
             <div>So how do</div>
             <div>entrepreneurs and</div>
-            <div>other actors do this?</div>
-            <div>Social networks research seems</div>
-            <div>to provide the answer. Scientists are</div>
-            <div>more likely to collaborate with colleagues</div>
-            <div>who attended the same conference, and workers are</div>
-            <div>more likely to apply to a company where a friend works.</div>
-            <div>But again, this is an overly static picture. Does no one ever browse</div>
-            <div>job boards or Google Scholar? And if they do, how do they do it?</div>
+            <div>other actors do this? Social networks</div>
+            <div>research seems to provide the answer. Scientists</div>
+            <div>are more likely to collaborate with colleagues who attended</div>
+            <div>the same conference, and workers are more likely to apply to a company where</div>
+            <div>a friend works. But again, this is an overly static picture. Does no one ever browse</div>
+            <div>job boards or Google Scholar? And if they do,</div>
+            <div>how do they do it?</div>
           </div>
 
           <Definition />
