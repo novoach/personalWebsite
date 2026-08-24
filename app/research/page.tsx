@@ -202,7 +202,7 @@ export default function Research() {
           key={group.title}
           className="mb-14 border-t border-gray-200 pt-8 last:mb-0"
         >
-          <h2 className="mb-8 text-lg font-semibold tracking-tight text-gray-900">
+          <h2 className="mb-8 text-xs font-semibold uppercase tracking-widest text-gray-400">
             {group.title}
           </h2>
           <div className="space-y-10">
