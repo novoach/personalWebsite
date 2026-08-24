@@ -115,7 +115,7 @@ function statusColor(status: string) {
 
 function ProjectEntry({ project }: { project: Project }) {
   return (
-    <article className="border-t border-gray-100 pt-8 first:border-t-0 first:pt-0">
+    <article>
       <div className="flex items-start justify-between gap-4 mb-2">
         <h3 className="text-base font-semibold text-gray-900 leading-snug">
           {project.title}
@@ -173,12 +173,15 @@ export default function Research() {
         Research
       </h1>
 
-      <section className="mb-16">
+      <section className="mb-14">
         <div className="space-y-4 text-gray-600 leading-relaxed">
           <p>
-            My research studies organizational reconnaissance: how actors
-            construct an understanding of their competitive environment through
-            search before they compete within it.
+            <strong className="font-semibold text-gray-800">
+              Organizational Reconnaissance
+            </strong>{" "}
+            is the cognitive investigation of distant environments. It is
+            focused on objects that have consequences for the future strategy
+            the agent will take.
           </p>
           <p>
             My work connects organizational categorization, organizational
@@ -195,11 +198,14 @@ export default function Research() {
       </section>
 
       {projectGroups.map((group) => (
-        <section key={group.title} className="mb-16 last:mb-0">
-          <h2 className="text-base font-semibold tracking-tight text-gray-900 mb-8">
+        <section
+          key={group.title}
+          className="mb-14 border-t border-gray-200 pt-8 last:mb-0"
+        >
+          <h2 className="mb-8 text-lg font-semibold tracking-tight text-gray-900">
             {group.title}
           </h2>
-          <div className="space-y-12">
+          <div className="space-y-10">
             {group.projects.map((project) => (
               <ProjectEntry key={project.title} project={project} />
             ))}
