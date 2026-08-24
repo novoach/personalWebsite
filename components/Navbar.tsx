@@ -74,13 +74,13 @@ export default function Navbar() {
     <nav
       ref={navRef}
       aria-hidden={isObscured || undefined}
-      className={`sticky top-0 border-b border-gray-100 bg-white transition-opacity duration-150 ${
+      className={`sticky top-0 z-50 border-b border-gray-100 bg-white transition-opacity duration-150 ${
         isObscured
-          ? "pointer-events-none z-0 opacity-0"
-          : "z-50 opacity-100"
+          ? "pointer-events-none opacity-0"
+          : "opacity-100"
       }`}
     >
-      <div className="max-w-4xl mx-auto px-6 py-3 sm:h-14 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+      <div className="max-w-4xl mx-auto flex flex-col gap-2 px-4 py-2 sm:h-14 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-3">
         <Link
           href="/"
           tabIndex={isObscured ? -1 : undefined}
@@ -88,13 +88,13 @@ export default function Navbar() {
         >
           Alex Tyulyupo
         </Link>
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-end">
+        <div className="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-end sm:gap-x-4">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               tabIndex={isObscured ? -1 : undefined}
-              className={`text-sm transition-colors ${
+              className={`text-[13px] transition-colors sm:text-sm ${
                 pathname === href
                   ? "text-gray-900 font-medium"
                   : "text-gray-500 hover:text-gray-900"
