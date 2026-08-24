@@ -108,7 +108,7 @@ export default function About() {
           aria-label="An observer surveys a partially visible competitive field while considering whether to defend or attack"
         >
           <img
-            className={styles.compactCloud}
+            
             src="/illustrations/recon-cloud.svg"
             alt=""
           />
@@ -133,7 +133,7 @@ export default function About() {
       <div className={styles.desktop}>
         <section className={styles.desktopStage}>
           <img
-            className={styles.headspace}
+            className={styles.compactCloud} data-nav-obscurer
             src="/illustrations/recon-cloud.svg"
             alt="The actor considers defending or attacking"
           />
