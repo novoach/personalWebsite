@@ -170,8 +170,8 @@ export default function About() {
             <div>are more likely to collaborate with colleagues who attended</div>
             <div>the same conference, and workers are more likely to apply to a company where</div>
             <div>a friend works. But again, this is an overly static picture. Does no one ever browse</div>
-            <div>job boards or Google Scholar? And if they do,</div>
-            <div>how do they do it?</div>
+            <div>job boards or Google Scholar? And if they do, how do they do it?</div>
+            
           </div>
 
           <Definition />
