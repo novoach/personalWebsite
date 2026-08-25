@@ -243,7 +243,7 @@ export default function About() {
       <section className={styles.gotHere}>
         <h2>How I Got Here</h2>
         <p>
-          Before my PhD, I worked as a freelance researcher at a large
+          Before my PhD, I worked as a freelance researcher for a large
           technology company, helping build a new online education platform for
           programmers. The task sounded simple. Use job-board data to describe
           the field&apos;s specializations.
